@@ -243,13 +243,13 @@
   line-height: 2.72vw
 }
 .middle-content__first {
-  height: 38.216vw
+  height: 28vw
 }
 .middle-content__second {
-  height: 38.216vw
+  height: 28vw
 }
 .middle-content__third {
-  height: 38.216vw
+  height: 28vw
 }
 .bottom-content {
   width: 100%;
@@ -258,7 +258,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 74px 0
+  padding: 0px 0
 }
 .bottom-content__slogan-download {
   position: absolute;
