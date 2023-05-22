@@ -1,0 +1,528 @@
+.max1600 {
+  max-width: 1600px;
+  min-width: 1007px;
+  margin: 0 auto
+}
+.first-content {
+  width: 100%;
+  height: 100vh;
+  position: relative
+}
+.first-content__bg {
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1
+}
+.first-content__bg, .first-content__mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh
+}
+.first-content__mask {
+  background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2))
+}
+.first-content__detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 234px;
+  margin: 0 auto;
+  font-family: PingFang SC;
+  font-style: normal;
+  text-align: center;
+  z-index: 10
+}
+.first-content__detail-txt {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 27.4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.first-content__detail-txt img {
+  width: 56.18px;
+  height: 27.4px;
+  margin: 5px
+}
+.first-content__detail__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 102px;
+  margin: 11px auto 0 auto;
+  border-radius: 37px
+}
+.first-content__detail__btn:active, .first-content__detail__btn:hover {
+  background-color: rgba(0, 0, 0, .2)
+}
+.first-content__detail__btn-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #09f
+}
+.first-content__detail__btn img {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px
+}
+.first-content__detail--animation {
+  animation: fadeAnimation 1s;
+  animation-fill-mode: both
+}
+.download-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3.4vw;
+  margin: 0 auto;
+  justify-content: center
+}
+.download-area, .download-area__item {
+  height: 11.22vw;
+  display: flex;
+  align-items: center
+}
+.download-area__item {
+  position: relative;
+  width: 9.52vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 1.105vw;
+  border: .085vw solid transparent
+}
+.download-area__item-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end
+}
+.download-area__item-qrcode {
+  position: relative;
+  width: 6.79065vw;
+  height: 6.63935vw;
+  margin-top: 1.17895vw;
+  margin-bottom: .82535vw
+}
+.download-area__item-intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .85vw
+}
+.download-area__item-intro__logo {
+  overflow: hidden;
+  position: relative;
+  width: 1.7vw;
+  height: 1.7vw;
+  margin-right: .51vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%
+}
+.download-area__item-intro__txt {
+  position: relative;
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.19vw;
+  line-height: 1.7vw;
+  color: #fff
+}
+.download-area__item-split-line {
+  content: "";
+  position: relative;
+  margin-bottom: .85vw;
+  width: .085vw;
+  height: 1.53vw;
+  background: #fff;
+  mix-blend-mode: normal;
+  opacity: .1;
+  border-radius: .34vw
+}
+.download-area__item:hover .download-area__item-intro__logo--shadow {
+  position: relative;
+  left: 170vw;
+  width: 1.7vw;
+  height: 1.7vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  filter: drop-shadow(-170vw 0 0 #0099ff)
+}
+.download-area__item:hover .download-area__item-intro__txt {
+  color: #09f
+}
+.download-area__item--display {
+  background: hsla(0, 0%, 100%, .88);
+  border: .085vw solid hsla(0, 0%, 100%, .8);
+  box-shadow: 0 .85vw 2.04vw rgba(0, 0, 0, .06);
+  -webkit-backdrop-filter: blur(.85vw);
+  backdrop-filter: blur(.85vw);
+  border-radius: .51vw;
+  z-index: 11
+}
+@keyframes fadeAnimation {
+  0% {
+    opacity: 1
+  }
+  to {
+    opacity: 0;
+    display: none
+  }
+}
+.reserve-btn {
+  position: absolute;
+  width: 126px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 5.14286px;
+  background-image: url(https://qq-web.cdn-go.cn/im.qq.com_new/7b341f39/img/reserve-btn.88ab5db1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 10;
+  box-shadow: 0 4px 24px -2px #bde0f8;
+  border-radius: 4px;
+  overflow: hidden
+}
+.reserve-btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  transform: scale(0);
+  transition: transform .5
+}
+.reserve-btn:active:after, .reserve-btn:hover:after {
+  transform: scale(1)
+}
+.middle-content {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff
+}
+.middle-content__item {
+  position: relative;
+  width: 100%
+}
+.middle-content__item-function {
+  margin-bottom: .816vw;
+  display: flex
+}
+.middle-content__item-function__img {
+  position: relative;
+  width: .952vw;
+  height: .952vw;
+  margin-right: .272vw
+}
+.middle-content__item-function__txt {
+  position: relative;
+  font-family: SF Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: .952vw;
+  line-height: .952vw;
+  color: #999
+}
+.middle-content__item-slogan {
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.904vw;
+  line-height: 2.72vw
+}
+.middle-content__first {
+  height: 38.216vw
+}
+.middle-content__second {
+  height: 38.216vw
+}
+.middle-content__third {
+  height: 38.216vw
+}
+.bottom-content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 74px 0
+}
+.bottom-content__slogan-download {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 116px;
+  height: 32px;
+  background: #09f;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.bottom-content__slogan-download:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  transform: scale(0);
+  transition: transform .5
+}
+.bottom-content__slogan-download:active:after, .bottom-content__slogan-download:hover:after {
+  transform: scale(1)
+}
+.bottom-content__slogan-download__logo {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%
+}
+.bottom-content__slogan-download__txt {
+  position: relative;
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff
+}
+.bottom-content__download-area {
+  margin: 24px 232px 0
+}
+.bottom-content__download-area, .bottom-content__download-area__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.bottom-content__download-area__item {
+  width: 104px;
+  height: 104px;
+  flex-direction: column
+}
+.bottom-content__download-area__item-logo {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 14px;
+  overflow: hidden
+}
+.bottom-content__download-area__item-logo--shadow {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%
+}
+.bottom-content__download-area__item-logo--shadow.Android {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMwSURBVHgB7ZxBetMwEIUfsGFH2LFDPQG5AeIG3CC+AdwguUG5QXqDrlmZHezaG7g3SDlB8NRxELHjxrZka8T7v++1Sb9EGmmkGdmWChBCCCGEEEIIIYQQQgghhBBCCCHdrEvtSxWlDNJlWWqHqq1rRIIYtXeUI11kgLltNYiAUweIviI96lnuaoFIkFHvGibTNBrjPGDwN/TU2iIiDJoGXiMdbvBv26LMdRs0p6iFftSEWAk5p0kqhYR82qYCEWPRHC0Z9PIFzfZ8RuSkkpANmqM/qsR7DoPmqNGYkG/QbIeBEjZoGr+EHgya9m8QgBcIQ52Q3dDzo9Qn9Megct7i8Fp+vznz2d+lHg96OOge/TldZj6UuoIyMvRPYNLRssSTWFu0fH+o7krdHsq26G93BqXkaC7h3FkhrzNUHX56IRdSUtftoW7XHgOlifccbRcxG1SjUJwzZad3SZwhs/MaihPvOb4hjk4eog0SwEBXp9faIYHRL1eSsYSZISqgNAFL7M+hq7O7tIWi2dB2/yQFFYh8NshyLoeuTh2iNSLEwO+FU+y6Q0QhyUJ3oh2qAhE4YQVdnZaUE1bQ2WlJOGEF3Z2m2glLAHtqHicY/F+rnb6S1VGvx6+venxWCv6JtPd+juVdqdelviMAbbdqqXZ53zeUAdhTF8vrnVQDxv0hynEBl+QAeaBiQfpiUG0S+IURZNA16mLT6E1pxUgD5PuSkAyq64cMcYezEPZuMZC1h8aYlnIN4nRCSHstemI8VJp1lG9Hlh1CWUB7c/RkPbJCUVfsW3go37dC22txIQZ+QsRzyWcfmULbm7cV+rLlb7JByWA8XZtxLeIjtL0WF5ZTwM+IOndjaoE4k/AU9uZ4hsxTRbXEcOuUL6/vPdehzd7OUJd7rqzWDrqeG4e0d+N2uHs+wCDyA2iJIGcX3tZv3CRsQaZAQpCt37gOWIFMxfGgSh2CDBh+puQYhuoZYEGm5BiG6ID5sPKjdsBHkKl56nPJAQaM/3MgeeBKZoCmA9Qp8XTumQ6YF0sHzMsHccB7kLlYShJO7f+7aeIRhBBCCCGEEEIIIYQQQgghhBBCkuUP9Dl4zqerh8kAAAAASUVORK5CYII=)
+}
+.bottom-content__download-area__item-logo--shadow.Windows {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADqSURBVHgB7dtBCsIwEEDR0ZP0/peynkRdiisrxV/xPQgkkFU+ZDczAAAAAPyL02x3m2NYHuv6tL/MMWx60/OQEiAmQEyAmAAxAWICxASICRATICZATICYADEBYgLEBIgJEBMgJkBMgJgAMQFiAsQEiAkQEyAmQEyAmAAxAWICxASICRD7ZEJmmWNYX87LHMM6wJt8Qftbt1w2Jbk/U5K/RICYADEBYgLEBIgJEBMgJkBMgJgAMQFiAsQEiAkQEyAmQEyAmAAxAWICxASICRATICZATICYADEBYgLEBIgJEBMgJgAAAAAAfMkdP60KiWoKjW4AAAAASUVORK5CYII=)
+}
+.bottom-content__download-area__item-txt {
+  font-size: 14px;
+  color: #000
+}
+.bottom-content__download-area__item-txt, .bottom-content__download-area__item-version {
+  position: relative;
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center
+}
+.bottom-content__download-area__item-version {
+  margin-top: 2px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #999
+}
+.bottom-content__download-area__item:not(:last-child) {
+  margin-right: 46px
+}
+.bottom-content__download-area__item:hover {
+  background-color: rgba(0, 153, 255, .06);
+  border-radius: 8px
+}
+.bottom-content__download-area__item:hover .bottom-content__download-area__item-logo--shadow.Android {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASmSURBVHgB7ZxfVtNAFMa/BPT4ZlyBcQXqCqg70BWoD8rxCVwBsALgwYOC54ArAFdAXQHsgCwB3zxoG+/N0DZNk9ImM2kTvt85QDqE5Gbu3D8zcwNACCGEEEIIIYQQQgghhBBCCCGkrXiwwVG8hT625SiSn6/wyYvQRr7EL7CKczkK4MvzfvB2UJHqCjgUoWJcpK7YxUfvFdrIt/hKvofDz308qzrYfNgmRkcE3UTbUCtPd77yCNeoiB0XdBifJx0/4hoPZXS89yoLuBQcxKEMVbXyYNjm4UQs/T0qYscCelBB0p0d4AZbaAt+Et+CVEskz1zZ/5tL28D4wf1M66aMnA6ajsY44G2mdd9WomEvBjzEHnRkpFlpgRXEOM20RFj39mAJewpQf9/HuE/UuHAYv0NTOYw3kA28wGdYxE4QTtOWgGwCr+b84bDNUuBNYz8N7SErYDMDsgm84VibpcA7fhvbmOCUFXTzNpg1Ax392cDbl2dyMMO374KU41hHvc4a03lzuRnysXRGDy+kAwJxbaFcR6/5uODs33KOurprSQB0WSSSe15iXrIzXhN4n8EBbhSgHEjw9XGcaX0jD3JW+DdmWaMjUj2/jSMhbODhUq4XydEvkelS1nC6hefmye2JW/3oncAB7hSgTAbkSALyy2FAVkv5i9dytCbn6c8A9aD378rT/8QDnA3lqSnwpnGrALN6eJFp3ZGH7EqHb8mXxoW6On0aZ+KyfoirW4PGqzQWFtym4VYBytd4T+6ygSZiAu82HGI/C8oSw9qssWbULZ3AMW4VoDNJf8IFNYUgiQeOZ/JuXJD6/gfYzQTg5qKBuNeUeYCO+ua6nWlE0ls7ttNRewowKeVpa0Z9EZb2ggfYUUBe/txmdGLXk0mlBZdUXQFHsunST9bMlyGfrxMrFSDVsqDv8VsRwpRp3D+M1ZuFu9KUtwDt/J77PLkBVLKEcgpg52cprYT5FZC/vkNKKmG+GKD+bnVik5oYQlnQO03S8TmYXQF64fuUapZBV3fn3H6dXQHmwiHIXWzOU5o5WwzI390ixWiJzstZ4sHdFmBmue0pM6yHQOLBTAPWn+GMbdD1zM+MVeLTXRBdT1XuLEqbbgHVXU8ELeXTfdV/4hNN6WKE5SWCXXl1hXh32gnFFjB67ags+ROT5V05dSevuW4371f5FqA37eMdquAV7CBpWx/OyjxK41LeKVXi+QpYTcryQlRB622KeIT5q9Vc41JeDcgF70pMKsDG6L+LplVK25C3wAr8nBatUAtRlT8oLsY9WsI3Z1zLW2AFeS7IThHVikT/vIUpbesvYWpbh7w5VjCugIOkBiaEDczC1MXY6NHjG3SxjBO7OuRVK8goeTwNnSymtcXAhzZl69KlvDtYH5U7jhRg8t0rENdciwKeDD6kXVAHpA6CdDAeKWBl4l1Y4oqVJNNMMApQ99P2irZlIh4N9oEFdEDqZOiGjAJ8KqB2bvt8YAFrIPXimT73mH4ujGSzxpfOb84L1O1CN2tCdUFUwKKQzNMXJ0QFLAoPz9UCnoIsBlkA9JP/v0AWRQhCCCGEEEIIIYQQQgghhBBCCCGt5T9ToI13RK3NFgAAAABJRU5ErkJggg==)
+}
+.bottom-content__download-area__item:hover .bottom-content__download-area__item-logo--shadow.Windows {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEVSURBVHgB7dsxSsRQGEbRP6MLGfcmDK5oENybuhEjIxZ2ksb7wHOqlI/ckKT5ZgAAAAD4L7Y56nnfZwV3c57H7f3r+rqf5zSvs4LLduienoaUADEBYgLEBIgJEBMgJkBMgJgAMQFiAsQEiAkQEyAmQEyAmAAxAWICxASICRATICZATICYADEBYgLEBIgJEBMgJkBMgNj9HPUxD7OCy/c65uZpe5vrvsa5gAOOj/Rug7gV3F47P616rl8c/wasskZ82ddcSR58qP0FxQSICRATICZATICYADEBYgLEBIgJEBMgJkBMgJgAMQFiAsQEiAkQEyAmQEyAmAAxAWICxASICRATICZATICYADEBYgIAAAAAwB/5BCPxGXK43YEEAAAAAElFTkSuQmCC)
+}
+.bottom-content__download-area__item:hover .bottom-content__download-area__item-txt {
+  color: #09f;
+  opacity: 1
+}
+.bottom-content__other-product {
+  position: relative;
+  margin-top: 48px;
+  width: 744px;
+  height: 156px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center
+}
+.bottom-content__product-item {
+  position: relative;
+  width: 364px;
+  height: 72px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center
+}
+.bottom-content__product-item:active, .bottom-content__product-item:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, .04), rgba(0, 0, 0, .04)), #fff
+}
+.bottom-content__product-item__logo {
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%
+}
+.bottom-content__product-item__txt {
+  font-family: PingFang SC;
+  font-style: normal
+}
+.bottom-content__product-item__txt-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000
+}
+.bottom-content__product-item__txt-intro {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #999
+}
+.bottom-content__product-item__txt-version {
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #999
+}
+.bottom-content__product-item__txt-wrap {
+  display: flex;
+  align-items: center
+}
+.footer-content {
+  width: 100%;
+  height: 206px;
+  position: relative;
+  flex-direction: column
+}
+.footer-content, .footer-content__other-links {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.footer-content__other-links {
+  flex-direction: row
+}
+.footer-content__other-links__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+.footer-content__other-links__item-txt {
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000;
+  opacity: .4
+}
+.footer-content__other-links__item-line {
+  content: "";
+  position: relative;
+  width: 1px;
+  height: 12px;
+  margin: 0 10px;
+  background: #000;
+  opacity: .2;
+  mix-blend-mode: normal;
+  border-radius: 4px
+}
+.footer-content__copyright-eng {
+  margin-top: 16px
+}
+.footer-content__copyright-eng, .footer-content__copyright-txt {
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000;
+  opacity: .4
+}
+.footer-content__copyright-txt {
+  margin-top: 12px
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: all .3s ease
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0
+}
+body {
+  font-family: Helvetica, Tahoma, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  min-width: 960px;
+  background-color: #fff
+}
+#app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative
+}
+.slidein-item {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: transform .4s ease-in-out, opacity .4s ease-out
+}
+.slidein-item.slidein {
+  opacity: 1;
+  transform: translateY(0)
+}
