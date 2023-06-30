@@ -5,8 +5,8 @@
 
 # Site
 title: 白井黒子のblog
-subtitle:
-description:
+subtitle: 安全娱乐圈の混子
+description: 闲的也是闲的，不如折腾折腾
 author: 白井黒子
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -58,9 +58,9 @@ index_with_subtitle: true
 
 menu:
   home: /
-  playground: /playground/
   categories: /categories/
   about: /about/
+  playground: /playground
 
 menu_icons:
   enable: true
