@@ -214,7 +214,11 @@ post_copyright:
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
-
+links_title: Links
+links:
+  Ephemerally: https://ephemerally.top/
+  Loora1n: https://loora1n.github.io/
+  Upw1nd: https://up-wind.github.io/
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
@@ -272,7 +276,7 @@ canvas_sphere: false
 
 # Only fit scheme Pisces
 # Canvas-ribbon
-canvas_ribbon: false
+canvas_ribbon: true
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
