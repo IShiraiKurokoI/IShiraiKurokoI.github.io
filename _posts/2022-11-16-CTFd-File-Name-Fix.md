@@ -133,28 +133,7 @@ def upload(self, file_obj, filename):
 
 /CTFd/themes/主题名称/templates/challenge.html
 
-```html
-<div class="row challenge-files text-center pb-3">
-   {% for file in files %}
-      <div class='col-md-12 col-sm-12 col-xs-12 file-button-wrapper d-block'>
-         <a class='btn btn-info btn-file mb-1 d-inline-block px-2 w-100 text-truncate'
-            href='{{ file }}'>
-            <i class="fas fa-download"></i>
-            <small>
-               {% set segments = file.split('/') %}
-               {% set file = segments | last %}
-               {% set token = file.split('?') | last %}
-               {% if token %}
-                  {{ file | replace("?" + token, "") }}
-               {% else %}
-                  {{ file }}
-               {% endif %}
-            </small>
-         </a>
-      </div>
-   {% endfor %}
-</div>
-```
+![image-20230630174156014](image-20230630174156014.png)
 
 将col-md-4 col-sm-4的class改为 col-md-12 col-sm-12 
 
