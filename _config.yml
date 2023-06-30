@@ -45,11 +45,8 @@ plugins:
 favicon: /assets/icon.ico
 
 keywords: "CTFd,CTF,Android,Web,CTFd-Whale"
-
-rss: false
-
-since: 2022
-
+rss:
+since: 2021
 authoricon: heart
 copyright: true
 canonical: true
@@ -64,7 +61,6 @@ menu:
 
 menu_icons:
   enable: true
-  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
   categories: th
@@ -178,7 +174,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -193,14 +189,14 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -217,9 +213,11 @@ post_copyright:
 
 links_title: 友情链接
 links:
+  Scr1w Studio: https://space.bilibili.com/690549848
   Ephemerally: https://ephemerally.top/
   Loora1n: https://loora1n.github.io/
   Upw1nd: https://up-wind.github.io/
+  Zedsich: https://zedsich.github.io/
   无尘车间: https://dawncraft.cc/
   Augists: https://augists.top/
   Skyli(谨防广州跳跳虎Tracker): https://skyli.xyz/
@@ -247,7 +245,7 @@ use_motion: true
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -264,10 +262,10 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-mac-osx
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
@@ -280,7 +278,7 @@ canvas_sphere: false
 
 # Only fit scheme Pisces
 # Canvas-ribbon
-canvas_ribbon: true
+canvas_ribbon: false
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
