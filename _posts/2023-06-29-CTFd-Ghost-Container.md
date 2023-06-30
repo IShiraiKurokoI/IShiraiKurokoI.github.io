@@ -3,11 +3,11 @@ title: CTFd异常关闭时Whale插件的幽灵容器问题处理
 description: CTFd-Whale是CTFd的一个插件，用于部署容器实例作为靶场，然而多多少少有点问题
 categories:
 - CTFd
-  tags:
+tags:
 - CTFd
 - CTFd-Whale
 - Docker
-  date: 2023-06-29
+date: 2023-06-29
 ---
 CTFd-Whale通过数据库来记录存在哪些容器和服务，以便进行开启和关闭，但如果承载CTFd的服务器或者平台出现故障异常重启，或平台异常关闭，有可能导致记录丢失，容器和服务变身无主容器。
 有人可能就想问了，我直接 docker ps 然后 docker stop，之后docker rm不就移除了吗？
