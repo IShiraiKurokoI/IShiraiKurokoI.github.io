@@ -116,11 +116,12 @@ font:
 
 social_icons:
   enable: true
-  # Icon Mappings.
-  # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  bilibili: youtube-play
+
+social:
+  Github: https://github.com/IShiraiKurokoI
+  bilibili: https://space.bilibili.com/310144483
 
 avatar: /assets/images/avatar.png
 
