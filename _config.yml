@@ -262,7 +262,7 @@ pace: true
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-center-simple
+pace_theme: pace-theme-fill-left
 
 # Canvas-nest
 canvas_nest: true
