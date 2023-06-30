@@ -7,6 +7,7 @@ tags:
 - CTFd
 - Security
 date: 2022-11-16
+photos: /ctfd/2022/11/16/CTFd-File-Name-Fix/image-20230630174156014.png
 ---
 在使用CTFd上传题目附件时候发现题目文件只能使用英文，中文名文件上传后会直接只剩拓展名。
 原因在于CTFd使用了flask原生的filename = secure_filename(filename)，导致中文名被抹去。

@@ -8,6 +8,7 @@ tags:
  - CTFd-Whale
  - Docker
 date: 2023-06-28
+photos: /ctfd/2023/06/28/CTFd-Whale-Pull-Fix/image-20230630160142268.png
 ---
 众所周知，CTFd-Whale会按照题目中设置的镜像名称去创建题目容器，然而在前端返回创建成功后，可能等了很长时间都没有创建成功，去后台一查，诶您猜怎么着，服务器没镜像！
 
