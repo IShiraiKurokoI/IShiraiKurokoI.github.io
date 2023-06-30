@@ -8,6 +8,7 @@ tags:
 - CTFd-Whale
 - Docker
 date: 2023-06-30
+photos: image-20230630165128707.png
 ---
 实际上，由于他创建的服务需要自行再去创建task，而task有一个prepare的阶段，这阶段就是这段等待时间。如果我们想要前端进行等待，需要修改两个地方：
 
