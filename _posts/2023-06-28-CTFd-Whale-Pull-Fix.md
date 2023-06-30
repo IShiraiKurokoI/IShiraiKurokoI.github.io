@@ -1,6 +1,6 @@
 ---
 title: CTFd-Whale 无镜像容器拉取问题修复
-description: CTFd-Whale是CTFd的一个插件，用于部署容器实例作为靶场，然而有些时候多多少少有点问题。
+description: CTFd-Whale是CTFd的一个插件，用于部署容器实例作为靶场。但是如果题目设置的镜像本地服务器集群上并没有，那么在whale拉取镜像的时候会出现假创建成功的问题。
 categories:
  - CTFd
 tags:

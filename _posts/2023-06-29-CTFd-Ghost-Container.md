@@ -1,6 +1,6 @@
 ---
 title: CTFd异常关闭时Whale插件的幽灵容器问题处理
-description: CTFd-Whale是CTFd的一个插件，用于部署容器实例作为靶场，然而多多少少有点问题
+description: CTFd-Whale是CTFd的一个插件，用于部署容器实例作为靶场。但是如果遭遇不可抗力或平台异常重启，创建的容器可能无法管理一直重启，这里探讨一下这种容器的处理方式
 categories:
 - CTFd
 tags:
