@@ -160,3 +160,5 @@ function loadInfo() {
 ```
 
 这样前端该等待的时候就会一直等待啦。（最后三行是为了实现链接可以点击，可加可不加）
+
+PS：我们Scr1w战队二次开发的CTFd整合版地址：https://github.com/dlut-sss/CTFD-Public

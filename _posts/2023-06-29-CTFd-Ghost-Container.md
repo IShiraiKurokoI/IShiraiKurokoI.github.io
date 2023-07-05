@@ -42,3 +42,5 @@ client.services.create(
 找到他创建的服务，直接rm掉服务，就可以解决问题了。
 
 妈妈再也不用担心产生无主容器啦。
+
+PS：我们Scr1w战队二次开发的CTFd整合版地址：https://github.com/dlut-sss/CTFD-Public

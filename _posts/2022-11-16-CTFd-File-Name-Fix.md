@@ -139,3 +139,5 @@ def upload(self, file_obj, filename):
 将col-md-4 col-sm-4的class改为 col-md-12 col-sm-12 
 
 完活下机。
+
+PS：我们Scr1w战队二次开发的CTFd整合版地址：https://github.com/dlut-sss/CTFD-Public

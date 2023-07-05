@@ -64,3 +64,5 @@ except Exception as e:
 如果镜像不存在，函数会抛出异常 **docker.errors.ImageNotFound**代码进入异常处理，执行拉取镜像操作，如果这时拉取仍然失败，pull函数会抛出**docker.errors.APIError**，然后异常会抛出给上层创建容器的函数，提示创建失败，移除docker记录。此时service尚未创建，移除record也不会产生幽灵容器（幽灵容器的处理见我另一篇文章）。
 
 这样这个问题就解决啦。
+
+PS：我们Scr1w战队二次开发的CTFd整合版地址：https://github.com/dlut-sss/CTFD-Public

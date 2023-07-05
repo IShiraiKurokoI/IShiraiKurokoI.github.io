@@ -20,3 +20,5 @@ def create_app(config="CTFd.config.Config"):
         app.config.from_object(config)
         ...
 ```
+
+PS：我们Scr1w战队二次开发的CTFd整合版地址：https://github.com/dlut-sss/CTFD-Public
