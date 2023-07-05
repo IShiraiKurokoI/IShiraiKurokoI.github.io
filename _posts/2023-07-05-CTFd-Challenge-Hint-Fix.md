@@ -8,7 +8,7 @@ tags:
 - CTFd-Challenge
 - Vue
 date: 2023-07-05
-photos: /ctfd/2023/07/05/CTFd-Challenge-Hint-Fix/image-20230630165128707.png
+photos: /ctfd/2023/07/05/CTFd-Challenge-Hint-Fix/image-20230705160621887.png
 ---
 CTFd的题目允许出题人增加提示，但是增加提示窗口最下面的地方却比较奇怪。。。
 
