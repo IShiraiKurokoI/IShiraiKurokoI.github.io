@@ -34,13 +34,22 @@ service = client.services.create(
 在这之后，我们不让函数自己返回，而是加上一段判断：
 
 ```python
+count = 0
 while True:
-    tasks = service.tasks()
-    for task in tasks:
-        current_state = task['Status']['State']
-        if 'running'.lower() in current_state.lower():
-            print("容器启动成功！")
-            return
+    count += 1
+    try:
+        tasks = service.tasks()
+        for task in tasks:
+            current_state = task['Status']['State']
+            if 'running'.lower() in current_state.lower():
+                print("容器启动成功！")
+                return
+    except:
+        pass
+
+    if count > 960:
+        service.remove()
+        raise Exception("容器创建超时")
     time.sleep(0.5)  # 等待0.5秒后重新检查
 ```
 
