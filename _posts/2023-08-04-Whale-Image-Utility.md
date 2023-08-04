@@ -110,9 +110,7 @@ def admin_image_update():
 在Whale的Templates目录下创建whale_upload.html，记得也在别的页面修改导航栏哦。(开头的extend为了不被页面渲染引擎使用加了几个空格 )
 
 ```html
-{% ex ten ds "whale_base.html" %} 
 
-{% block menu %}
     <li class="nav-item">
         <a class="nav-link" href="/plugins/ctfd-whale/admin/settings">🔗 设置</a>
     </li>
@@ -122,9 +120,8 @@ def admin_image_update():
     <li class="nav-item">
         <a class="nav-link active" href="#">上传</a>
     </li>
-{% endblock %}
-
-{% block panel %}
+```
+```html
     <div>
         <div class="form-group" id="drop">
             <p>您可以在下面上传镜像的tar文件，服务器端会尝试导入镜像。您应该只上传您信任的镜像！</p>
@@ -159,9 +156,8 @@ def admin_image_update():
             </div>
         </div>
     </div>
-{% endblock %}
-
-{% block scripts %}
+```
+```js
     <script>
         function handleDrop(event) {
             event.preventDefault();
@@ -259,7 +255,6 @@ def admin_image_update():
             });
         }
     </script>
-{% endblock %}
 ```
 
 至于为什么css混一起写，emmm，懒了，应该提取出来的实际上。
