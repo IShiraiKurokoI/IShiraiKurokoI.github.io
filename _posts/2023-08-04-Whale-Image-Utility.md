@@ -107,7 +107,7 @@ def admin_image_update():
 
 接下来就是上传镜像的功能了，先写一个简单的上传页面。
 
-在Whale的Templates目录下创建whale_upload.html，记得也在别的页面修改导航栏哦。(开头的extend为了不被页面渲染引擎使用加了几个空格 )
+在Whale的Templates目录下创建whale_upload.html，记得也在别的页面修改导航栏哦。(extend那些渲染标记省略了，对号入座就行)
 
 ```html
 
