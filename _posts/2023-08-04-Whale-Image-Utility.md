@@ -69,7 +69,7 @@ function UpdateDockerImage(){
         } else {
             var e = new Object;
             e.title = "更新失败！";
-            e.body = response.json()[message];
+            e.body = response.message;
             CTFd.ui.ezq.ezToast(e)
         }
     });
