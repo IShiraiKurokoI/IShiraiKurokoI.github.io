@@ -1,6 +1,6 @@
 ---
-title: CTFd Whale镜像上传和镜像更新功能
-description: 镜像上传更新，一键完成
+title: CTFd 比赛计分板插件重构
+description: 屎山早晚是要重构的
 categories:
 - CTFd
 tags:
@@ -227,6 +227,7 @@ def scoreboard_view():
 首先就是表头类别的处理，既然改成了动态渲染表头，那么就改成这样写：
 
 ```jinja2
+{% raw %}
 <thead>
     <tr>
         <th rowspan="3" style="border-top: 0"><b>{{"Place" if en else "排名"}}</b>
@@ -288,6 +289,7 @@ def scoreboard_view():
         </div>
     </tr>
 </thead>
+{% endraw %}
 ```
 
 这里的colorhash是一个全局定义的python函数：
