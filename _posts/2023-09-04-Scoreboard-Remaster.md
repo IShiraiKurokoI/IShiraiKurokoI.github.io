@@ -312,6 +312,7 @@ app.add_template_global(color_hash, 'color_hash')
 然后表格内容直接使用standings进行渲染：
 
 ```jinja2
+{% raw %}
 <tbody>
     {% for team in standings %}
     <tr>
@@ -344,6 +345,7 @@ app.add_template_global(color_hash, 'color_hash')
     </tr>
     {% endfor %}
 </tbody>
+{% endraw %}
 ```
 
 这样就好了，修复了之前最后一列过小的问题，加入了奖励分数和额外加分项的计算和渲染，优化了视觉效果和计算性能，完活下机！
