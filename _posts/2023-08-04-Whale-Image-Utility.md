@@ -22,7 +22,6 @@ CTFd Whale提供的动态容器类型的题目是通过镜像名称创建service
 
 ```jinja2
 {% raw %}
-{% endraw %}
     <div class="form-group">
         <label for="value">Docker镜像<br>
             <small class="form-text text-muted">
@@ -37,6 +36,7 @@ CTFd Whale提供的动态容器类型的题目是通过镜像名称创建service
             </button>
         </div>
     </div>
+{% endraw %}
 ```
 
 然后在update.js里写以下函数（至于为什么用CTFd.fetch，之后再说）
@@ -357,7 +357,7 @@ def admin_upload_image():
 
 至于为什么要先获取镜像再删除，是因为docker-py如果不指定name和tag是不会自动识别的，会成为none；另外如果加载时有同名同tag镜像，原先的镜像的name和tag都会被变成none，会产生镜像垃圾。
 效果如下
-![](../ctfd/2023/08/04/Whale-Image-Utility/upload.png)
+![](upload.png)
 好的，完活，下机！
 
 PS：我们Scr1w战队二次开发的CTFd整合版地址：https://github.com/dlut-sss/CTFD-Public
