@@ -9,7 +9,7 @@ tags:
 - docker
 - flask
 - csrf
-date: 2023-07-05
+date: 2023-08-04
 photos: /ctfd/2023/08/04/Whale-Image-Utility/update.png
 ---
 CTFd Whale提供的动态容器类型的题目是通过镜像名称创建service进而创建题目实例的，但是如果题目镜像并没有上传的dockerhub（比如只有题目的tar文件），或者题目更新了，这时候如果我们想要更新/创建题目就需要手动进入服务器上传镜像或者用tag进行区分，很是麻烦。为了解决这个问题，我们就给whale加点功能吧。
