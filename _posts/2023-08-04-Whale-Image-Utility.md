@@ -20,7 +20,9 @@ CTFd Whale提供的动态容器类型的题目是通过镜像名称创建service
 
 在\CTFd\plugins\ctfd-whale\assets\update.html中修改以下内容
 
-```html
+```jinja2
+{% raw %}
+{% endraw %}
     <div class="form-group">
         <label for="value">Docker镜像<br>
             <small class="form-text text-muted">
@@ -109,53 +111,57 @@ def admin_image_update():
 
 在Whale的Templates目录下创建whale_upload.html，记得也在别的页面修改导航栏哦。(extend那些渲染标记省略了，对号入座就行)
 
-```html
+```jinja2
+{% raw %}
 
-    <li class="nav-item">
-        <a class="nav-link" href="/plugins/ctfd-whale/admin/settings">🔗 设置</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/plugins/ctfd-whale/admin/containers">🔗 实例</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="#">上传</a>
-    </li>
+<li class="nav-item">
+    <a class="nav-link" href="/plugins/ctfd-whale/admin/settings">🔗 设置</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/plugins/ctfd-whale/admin/containers">🔗 实例</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link active" href="#">上传</a>
+</li>
+{% endraw %}
 ```
-```html
-    <div>
-        <div class="form-group" id="drop">
-            <p>您可以在下面上传镜像的tar文件，服务器端会尝试导入镜像。您应该只上传您信任的镜像！</p>
-            <div class="form-group">
-                <div style="display: flex;gap: 10px;">
-                    <div style="flex: 1;">
-                        <label for="value">镜像name<br>
-                            <small class="form-text text-muted">
-                                eg. fr000g/untrain1
-                            </small>
-                        </label>
-                        <input type="text" class="form-control" name="docker_image_name" id="docker_image_name"
-                               placeholder="输入镜像name" id="docker_name_input" required="" value="">
-                    </div>
-                    <div style="flex: 1;">
-                        <label for="value">镜像tag<br>
-                            <small class="form-text text-muted">
-                                eg. latest
-                            </small>
-                        </label>
-                        <input type="text" class="form-control" name="docker_image_tag" id="docker_image_tag"
-                               placeholder="输入镜像tag" id="docker_tag_input" required="" value="latest">
-                    </div>
+```jinja2
+{% raw %}
+<div>
+    <div class="form-group" id="drop">
+        <p>您可以在下面上传镜像的tar文件，服务器端会尝试导入镜像。您应该只上传您信任的镜像！</p>
+        <div class="form-group">
+            <div style="display: flex;gap: 10px;">
+                <div style="flex: 1;">
+                    <label for="value">镜像name<br>
+                        <small class="form-text text-muted">
+                            eg. fr000g/untrain1
+                        </small>
+                    </label>
+                    <input type="text" class="form-control" name="docker_image_name" id="docker_image_name"
+                           placeholder="输入镜像name" id="docker_name_input" required="" value="">
                 </div>
-            </div>
-            <div class="drop-area" ondragover="event.preventDefault()" ondrop="handleDrop(event)"
-                 style="border: 2px dashed #ccc;padding: 20px;text-align: center;height: 200px;display: flex;align-items: center;justify-content: center;">
-                <div class="centered-content"
-                     style="display: flex;flex-direction: column;align-items: center;justify-content: center;height: 100%;">
-                    <h2>将镜像文件拖拽至此处上传(请一次仅拖拽一个文件)</h2>
+                <div style="flex: 1;">
+                    <label for="value">镜像tag<br>
+                        <small class="form-text text-muted">
+                            eg. latest
+                        </small>
+                    </label>
+                    <input type="text" class="form-control" name="docker_image_tag" id="docker_image_tag"
+                           placeholder="输入镜像tag" id="docker_tag_input" required="" value="latest">
                 </div>
             </div>
         </div>
+        <div class="drop-area" ondragover="event.preventDefault()" ondrop="handleDrop(event)"
+             style="border: 2px dashed #ccc;padding: 20px;text-align: center;height: 200px;display: flex;align-items: center;justify-content: center;">
+            <div class="centered-content"
+                 style="display: flex;flex-direction: column;align-items: center;justify-content: center;height: 100%;">
+                <h2>将镜像文件拖拽至此处上传(请一次仅拖拽一个文件)</h2>
+            </div>
+        </div>
     </div>
+</div>
+{% endraw %}
 ```
 ```js
     <script>
