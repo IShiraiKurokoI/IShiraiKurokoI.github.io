@@ -232,6 +232,13 @@ links:
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: normal
 
+gitalk:
+  enable: true
+  clientID: c6afb36fa3459965b138
+  clientSecret: f74f037fa8f5edeabfa5a85517d2595e91a20306
+  repo: comments
+  owner: IShiraiKurokoI
+  admin: IShiraiKurokoI
 
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
