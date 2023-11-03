@@ -1,5 +1,5 @@
 ---
-title: CTFd 题目及平台日志监控
+title: CTFd 题目及平台容器日志监控
 description: 摆脱cli，拥抱gui！
 categories:
 - CTFd
@@ -321,3 +321,5 @@ bundle的源码就是上面注释里的内容，引入xterm和xterm-fit-addon使
 效果如下：
 ![](docker-1.png)
 ![](docker-2.png)
+
+完活下机！
